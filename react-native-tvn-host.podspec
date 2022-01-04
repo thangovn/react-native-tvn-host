@@ -16,4 +16,6 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
   s.dependency "React-Core"
+
+  s.dependency 'AgoraRtcEngine_iOS', '3.5.2'
 end
