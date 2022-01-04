@@ -553,8 +553,8 @@ export default class RtcEngine implements RtcEngineInterface {
     return RtcEngine._callMethod('leaveChannel');
   }
 
-  initTiSDK(): any {
-    return RtcEngine._callMethod('initTiSDK');
+  initTiSDK(key:string): Promise<void> {
+    return RtcEngine._callMethod('initTiSDK', {key});
   }
 
   /**
@@ -3699,7 +3699,7 @@ interface RtcEngineInterface
     RtcStreamMessageInterface {
   destroy(): Promise<void>;
 
-  initTiSDK(): any;
+  initTiSDK(key:string): Promise<void>;
 
   setChannelProfile(profile: ChannelProfile): Promise<void>;
 
