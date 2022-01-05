@@ -6,6 +6,7 @@ import {
   RtcSurfaceViewProps,
   RtcTextureView,
   RtcTextureViewProps,
+  TVNBeautyButtonView
 } from './common/RtcRenderView.native';
 
 /**
@@ -16,6 +17,12 @@ import {
 class SurfaceView extends Component<ViewProps & RtcSurfaceViewProps, {}> {
   render() {
     return <RtcSurfaceView {...this.props} uid={0} />;
+  }
+}
+
+class RTCTVNBeautyButtonView extends Component<ViewProps & RtcSurfaceViewProps, {}> {
+  render() {
+    return <TVNBeautyButtonView {...this.props} />;
   }
 }
 
@@ -41,4 +48,5 @@ class TextureView extends Component<ViewProps & RtcTextureViewProps, {}> {
 export default {
   SurfaceView,
   TextureView,
+  RTCTVNBeautyButtonView
 };

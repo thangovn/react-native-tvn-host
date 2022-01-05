@@ -96,6 +96,20 @@ export class RtcSurfaceView extends Component<
   }
 }
 
+const RTCTVNBeautyButtonView = requireNativeComponent<any>(
+  'TVNBeautyButtonView'
+);
+
+export class TVNBeautyButtonView extends Component<
+  ViewProps ,
+  {}
+> {
+  render() {
+    return <RTCTVNBeautyButtonView {...this.props}  />;
+  }
+}
+
+
 /**
  * @ignore
  */
