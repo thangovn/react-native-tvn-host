@@ -557,6 +557,10 @@ export default class RtcEngine implements RtcEngineInterface {
     return RtcEngine._callMethod('initTiSDK', {key});
   }
 
+  showBeautyMenuView(): Promise<void>{
+    return RtcEngine._callMethod('showBeautyMenuView');
+  }
+
   /**
    * Renews the token when the current token expires.
    *
